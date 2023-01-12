@@ -3,45 +3,49 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="12dp">
+    android:background="@drawable/image_item_background"
+    android:padding="6dp"
+    android:layout_margin="6dp">
 
     <ImageView
         android:id="@+id/image"
-        android:layout_width="100dp"
+        android:layout_width="120dp"
         android:layout_height="100dp"
         android:scaleType="fitCenter"
         android:src="@drawable/test_image"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
     <TextView
         android:layout_marginStart="8dp"
         android:id="@+id/text_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Id: 21"
+        android:text="@string/id_21"
         app:layout_constraintBottom_toTopOf="@id/text_2"
         app:layout_constraintLeft_toRightOf="@id/image"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:layout_marginStart="8dp"
         android:id="@+id/text_2"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
+        app:layout_constraintStart_toStartOf="@id/text_1"
+        app:layout_constraintEnd_toEndOf="parent"
         android:layout_height="wrap_content"
-        android:text="author:Aleks Dorohovich"
+        android:text="@string/author_aleks_dorohovich"
         app:layout_constraintBottom_toBottomOf="@id/download_url"
         app:layout_constraintLeft_toRightOf="@id/image"
         app:layout_constraintTop_toBottomOf="@id/text_1" />
 
     <TextView
-        android:layout_marginStart="8dp"
         android:id="@+id/download_url"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="download url :https://picsum.photos/id/20/3670/2462"
+        android:text="@string/url_https_picsum_photos_id_20_3670_2462"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toRightOf="@id/image"
+        app:layout_constraintStart_toStartOf="@id/text_1"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/text_2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Wisdomleaf Test</string>
+    <string name="id_21">Id: 21</string>
+    <string name="author_aleks_dorohovich">Author:Aleks Dorohovich</string>
+    <string name="url_https_picsum_photos_id_20_3670_2462">Url :https://picsum.photos/id/20/3670/2462</string>
 </resources>
