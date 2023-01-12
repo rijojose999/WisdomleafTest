@@ -16,6 +16,7 @@ class AppModule {
 
     @Provides
     @Singleton
+    //Ensures singleton pattern for the ImageApi class throughout the application.
     fun providesImageApi(): ImageApi {
         return Retrofit.Builder()
             .baseUrl(Constants.BASE_URL)
